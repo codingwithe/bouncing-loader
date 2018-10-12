@@ -1,0 +1,74 @@
+@keyframes Bounce{
+    0%{
+        transform: translateY(25px);
+        }
+    25%{
+        transform: translateY(25px);
+        }
+    50%{
+      transform: translateY(-25px);
+        }
+    75%{
+        transform: translateY(25px);
+        }
+  100%{
+        transform: translateY(25px);
+  }
+        }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .balls li {
+        background-color: lightblue;
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #373144;
+    border: 20px solid lightslategrey;
+    display: grid;
+    height: 95vh;
+}
+.animation-box {
+    margin: auto;
+    width: 75%;
+}
+
+.balls {
+    list-style-type: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.balls li {
+    background-color: lightslategrey;
+    border: 1px solid #a6bba3;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 5px;
+    height: 2em;
+    width: 2em;
+}
+
+#ball-1 {
+    animation: Bounce 1.5s infinite 0s linear;
+}
+
+#ball-2 {
+    animation: Bounce 1.5s infinite .2s linear;
+}
+
+#ball-3 {
+    animation: Bounce 1.5s infinite .4s linear;
+}
