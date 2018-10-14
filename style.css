@@ -37,12 +37,13 @@ body {
 .container {
     background-color: #373144;
     border: 20px solid lightslategrey;
-    display: grid;
+    display: flex;
     height: 95vh;
 }
 .animation-box {
+    align-content: center;
     margin: auto;
-    width: 75%;
+    justify-items: center;
 }
 
 .balls {
